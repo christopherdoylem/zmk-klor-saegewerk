@@ -250,12 +250,13 @@
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                  │    1    │  BACK   │  SHIFT  │ CMD/WIN ││ CMD/WIN │  ENTER  │  SPACE  │    2    │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
+// this is reversed for the saegewerk
 
             bindings = <
-             &kp B    &kp L         &kp D         &HML LGUI W    &kp Z                           &kp SQT    &HMR LGUI F  &kp O          &kp U          &kp J
-    &kp TAB  &lt 2 N  &HML LCTRL R  &HML LALT T   &lt 3 S        &kp G                           &kp Y      &lt 3 H      &HMR LALT A    &HMR LCTRL E   &lt 2 I    &kp COMMA
-    &tog 1   &kp Q    &kp X         &kp M         &kp C          &kp V   &kp C_MUTE  &kp C_PP    &kp K      slashP       &kp PERIOD     &kp MINUS      &kp SLASH  &kp ESCAPE
-                      &mo 1         &kp BACKSPACE &kp LSHIFT     &trans                          &trans     HYPEReturn   MehSpace       &mo 2
+                &kp J      &kp U         &kp Q         &HML LGUI F    &kp SQT                         &kp Z    &HMR LGUI W   &kp D           &kp L          &kp B
+    &kp COMMA   &lt 2 I    &HML LCTRL E  &HML LALT A   &lt 3 H        &kp Y                           &kp G    &lt 3 S       &HMR LALT T     &HMR LCTRL R   &lt 2 N    &kp TAB  
+    &kp ESCAPE  &kp SLASH  &kp MINUS     &kp PERIOD    &kp slashP     &kp K   &kp C_MUTE  &kp C_PP    &kp V    &kp C         &kp M           &kp X          &kp Q      &tog 1    
+                           &mo 2         MehSpace      HYPEReturn     &trans                          &trans   &KP LSHIFT    &kp BACKSPACE   &mo 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -324,10 +325,10 @@
 
             label = "Nav";
             bindings = <
-                    &trans       &kp LC(TAB)  &kp DELETE   &kp C_MUTE    &kp PG_UP                   &kp PG_DN       &kp LC(C)       &kp UP        &kp LC(V)     &trans
-        &trans      &kp ESCAPE   &kp TAB      &trans       &kp C_VOL_UP  &trans                      &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT    &kp LC(EQUAL)  &trans
-        &trans      &trans       &trans       &trans       &kp C_VOL_DN  &trans      &trans  &trans  &trans          &trans          &kp CAPSLOCK  &trans        &kp LC(MINUS)  &trans
-                                 &trans       &trans       &trans        &trans                      &trans          &trans          &trans        &trans
+              ___          &kp LC(TAB)  &kp DELETE   &kp C_MUTE      &kp PG_UP                   &kp PG_DN   &kp LC(C)    ___           &kp LC(V)     ___
+        ___   &kp ESCAPE   &kp TAB      ___          &kp C_VOL_UP    ___                         &kp LEFT    &kp DOWN     &kp UP        &kp RIGHT    &kp LC(EQUAL)  ___
+        ___   ___          ___          ___          &kp C_VOL_DN    ___        ___   ___        ___         &kp PG_UP    &kp CAPSLOCK  &kp PG_DN    &kp LC(MINUS)  ___
+                           ___          ___          ___             ___                         ___         ___          ___           ___         
             >;
                     sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
