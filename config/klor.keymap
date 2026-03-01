@@ -255,7 +255,7 @@
                 &kp J      &kp U         &kp Q         &HML LGUI F    &kp SQT                          &kp Z    &HMR LGUI W   &kp D           &kp L          &kp B
     &kp COMMA   &lt 2 I    &HML LCTRL E  &HML LALT A   &lt 3 H        &kp Y                            &kp G    &lt 3 S       &HMR LALT T     &HMR LCTRL R   &lt 2 N    &kp TAB  
     &kp ESCAPE  &kp SLASH  &kp MINUS     &kp PERIOD    &kp slashP     &kp K     &kp C_MUTE  &kp C_PP   &kp V    &kp C         &kp M           &kp X          &kp Q      &tog 1    
-                           &mo 2         MehSpace      HYPEReturn     ___                              ___      &kp LSHIFT    &kp BACKSPACE   &mo 1
+                           &mo 2         MehSpace      HYPEReturn     &none                            &none    &kp LSHIFT    &kp BACKSPACE   &mo 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
