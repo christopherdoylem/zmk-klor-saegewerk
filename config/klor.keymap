@@ -266,10 +266,10 @@
             label = "Lower";
         
             bindings = <
-                        &kp N0  &kp N9  &kp N8  &kp N7  ___                ___  ___         &kp STAR   &kp AMPS   ___
-            ___     ___  &kp N6  &kp N5  &kp N4  ___     ___                ___  &kp CARET   &kp PRCNT  &kp DLLR   &kp ESCAPE  ___
-            ___     ___  &kp N3  &kp N2  &kp N1  ___     ___  ___           ___  &kp HASH    &kp AT     &kp EXCL   ___         ___
-                         ___     ___     ___     ___                         ___  ___         ___        ___
+                 &kp N0  &kp N9  &kp N8  &kp N7  ___                       ___    ___         &kp STAR     &kp AMPS    ___
+            ___  ___     &kp N6  &kp N5  &kp N4  ___                       ___    &kp CARET   &kp PRCNT    &kp DLLR    &kp ESCAPE    ___
+            ___  ___     &kp N3  &kp N2  &kp N1  ___        ___ ___        ___    &kp HASH    &kp AT       &kp EXCL    ___           ___
+                         ___     ___     ___     ___                       ___    ___         ___        ___
             >;
         
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -279,10 +279,10 @@
             label = "Raise";
         
             bindings = <
-                        ___        &kp F9    &kp F8    &kp F7    &kp F12                ___  ___          ___        ___        ___
-            ___  &kp TILDE  &kp BSLH   &kp F6    &kp F5    &kp F4    &kp F11                ___  &kp EQUAL    &kp MINUS  ___        &kp ESCAPE  ___
-            ___  &kp GRAVE  &kp PIPE   &kp F3    &kp F2    &kp F1    &kp F10   ___  ___      ___  &kp PLUS     &kp UNDER  ___        ___         ___
-                           ___         ___       ___       ___                          ___  ___          ___        ___
+                         ___         &kp F9    &kp F8    &kp F7    &kp F12                        ___    ___          ___          ___    ___
+            &kp TILDE    &kp BSLH    &kp F6    &kp F5    &kp F4    &kp F11                        ___    &kp EQUAL    &kp MINUS    ___    &kp ESCAPE    ___
+            &kp GRAVE    &kp PIPE    &kp F3    &kp F2    &kp F1    &kp F10        ___  ___        ___    &kp PLUS     &kp UNDER    ___    ___           ___
+                                          ___       ___       ___       ___                            ___    ___          ___          ___
             >;
         
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -292,10 +292,10 @@
             label = "Nav";
         
             bindings = <
-                        ___            &kp LC(V)  ___           &kp LC(C)    &kp PG_DN                  &kp PG_UP        &kp C_MUTE    &kp DELETE   &kp LC(TAB)  ___
-            ___  ___    &kp LC(EQUAL)  &kp RIGHT  &kp UP        &kp DOWN     &kp LEFT                   ___              &kp C_VOL_UP  ___          &kp TAB      &kp ESCAPE  ___
-            ___  ___    &kp LC(MINUS)  &kp PG_DN  &kp CAPSLOCK  &kp PG_UP    ___         ___  ___       ___              &kp C_VOL_DN  ___          ___          ___         ___
-                        ___            ___        ___            ___                                     ___              ___           ___          ___
+                   ___              &kp LC(V)    ___             &kp LC(C)    &kp PG_DN                       &kp PG_UP    &kp C_MUTE      &kp DELETE    &kp LC(TAB)    ___
+            ___    &kp LC(EQUAL)    &kp RIGHT    &kp UP          &kp DOWN     &kp LEFT                        ___          &kp C_VOL_UP    ___           &kp TAB        &kp ESCAPE    ___
+            ___    &kp LC(MINUS)    &kp PG_DN    &kp CAPSLOCK    &kp PG_UP    ___             ___  ___        ___          &kp C_VOL_DN    ___           ___            ___           ___
+                                    ___          ___             ___          ___                             ___          ___             ___           ___
             >;
         
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
