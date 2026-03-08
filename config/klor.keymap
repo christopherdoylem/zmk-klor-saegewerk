@@ -226,6 +226,14 @@
           bindings = <&kp RIGHT>, <&kp DLLR>;
           mods = <(MOD_LSFT | MOD_RSFT)>;
       };
+        
+        comma_morph: comma_morph {
+          compatible = "zmk,behavior-mod-morph";
+          label = "comma_morph";
+          #binding-cells = <0>;
+          bindings = <&kp COMMA>, <&kp DOT>;
+          mods = <(MOD_LSFT | MOD_RSFT)>;
+      };
 
     };
 
@@ -251,10 +259,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-                &kp J      &kp U         &kp O         &HML LGUI F    &kp SQT                          &kp Z    &HMR LGUI W   &kp D           &kp L          &kp B
-    &kp COMMA   &lt 2 I    &HML LCTRL E  &HML LALT A   &lt 3 H        &kp Y                            &kp G    &lt 3 S       &HMR LALT T     &HMR LCTRL R   &lt 2 N    &kp TAB  
-    &kp ESCAPE  &kp SLASH  &kp MINUS     &kp PERIOD    slashP         &kp K     &kp C_MUTE  &kp C_PP   &kp V    &kp C         &kp M           &kp X          &kp Q      &tog 1    
-                           &mo 2         MehSpace      HYPEReturn     &none                            &none    &kp LSHIFT    &kp BACKSPACE   &mo 1
+                &kp J      &kp U         &kp O           &HML LGUI F    &kp SQT                          &kp Z    &HMR LGUI W   &kp D           &kp L          &kp B
+    &kp COMMA   &lt 2 I    &HML LCTRL E  &HML LALT A     &lt 3 H        &kp Y                            &kp G    &lt 3 S       &HMR LALT T     &HMR LCTRL R   &lt 2 N    &kp TAB  
+    &kp ESCAPE  &kp SLASH  &kp MINUS     &comma_morph    slashP         &kp K     &kp C_MUTE  &kp C_PP   &kp V    &kp C         &kp M           &kp X          &kp Q      &tog 1    
+                           &mo 2         MehSpace        HYPEReturn     &none                            &none    &kp LSHIFT    &kp BACKSPACE   &mo 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -280,9 +288,9 @@
         
             bindings = <
                          ___         &kp F9    &kp F8    &kp F7    &kp F12                        ___    ___          ___          ___    ___
-            &kp TILDE    &kp BSLH    &kp F6    &kp F5    &kp F4    &kp F11                        ___    &kp EQUAL    &kp MINUS    ___    &kp ESCAPE    ___
-            &kp GRAVE    &kp PIPE    &kp F3    &kp F2    &kp F1    &kp F10        ___  ___        ___    &kp PLUS     &kp UNDER    ___    ___           ___
-                                          ___       ___       ___       ___                            ___    ___          ___          ___
+            &kp TILDE    &kp BSLH    &kp F6    &kp F5    &kp F4    &kp F11                        ___    &kp EQUAL    &kp MINUS    &kp TILDE    &kp ESCAPE    ___
+            &kp GRAVE    &kp PIPE    &kp F3    &kp F2    &kp F1    &kp F10        ___  ___        ___    &kp PLUS     &kp UNDER    &kp GRAVE    ___           ___
+                                          ___       ___       ___       ___                       ___    ___          ___          ___
             >;
         
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
