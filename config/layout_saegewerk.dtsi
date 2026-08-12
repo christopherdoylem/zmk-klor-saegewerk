@@ -1,0 +1,73 @@
+// saegewerk -- the same KLOR board as the standard klor, but built with the
+// controllers on top of the circuit board instead of underneath. That flips
+// each half over, so the firmware reads every row backwards, and the layout
+// has to be reversed to cancel it out. 36 keys: three rows of five per hand,
+// three thumbs per hand, and a knob on each half.
+//
+// The outer keys, the two middle keys and the innermost thumbs exist in the
+// KLOR design but are not fitted on this board, so they are wired to nothing.
+// LAYOUT() takes the canonical 46 slots and keeps the 36 this board has.
+
+#define LAYOUT( \
+    l1, l2, l3, l4, l5, \
+    r1, r2, r3, r4, r5, \
+    l6, l7, l8, l9, l10, \
+    r6, r7, r8, r9, r10, \
+    l11, l12, l13, l14, l15, \
+    r11, r12, r13, r14, r15, \
+    lt1, lt2, lt3, rt1, rt2, \
+    rt3, o1l, o1r, o2l, o2r, \
+    o3l, o3r, midl, midr, t4l, \
+    t4r)  \
+      r5    r4    r3    r2    r1    l5    l4    l3    l2    l1 \
+    XXX   r10    r9    r8    r7    r6   l10    l9    l8    l7    l6  XXX \
+    XXX   r15   r14   r13   r12   r11  XXX  XXX   l15   l14   l13   l12   l11  XXX \
+     rt3   rt2   rt1  XXX  XXX   lt3   lt2   lt1
+
+#define HAS_ENCODER
+#define HAS_TWO_ENCODERS
+#define MIRRORED
+
+// Which physical half each key is on, for the homerow modifiers. These are
+// crossed over on purpose: KEYS_L lists the positions opposite the left-hand
+// keys, and on a mirrored board the left-hand keys sit on the right half.
+#define KEYS_L 5 6 7 8 9 16 17 18 19 20 30 31 32 33 34 41 42 43
+#define KEYS_R 0 1 2 3 4 11 12 13 14 15 23 24 25 26 27 36 37 38
+
+// key positions by canonical slot, for combos
+#define POS_L1     9
+#define POS_L2     8
+#define POS_L3     7
+#define POS_L4     6
+#define POS_L5     5
+#define POS_R1     4
+#define POS_R2     3
+#define POS_R3     2
+#define POS_R4     1
+#define POS_R5     0
+#define POS_L6     20
+#define POS_L7     19
+#define POS_L8     18
+#define POS_L9     17
+#define POS_L10    16
+#define POS_R6     15
+#define POS_R7     14
+#define POS_R8     13
+#define POS_R9     12
+#define POS_R10    11
+#define POS_L11    34
+#define POS_L12    33
+#define POS_L13    32
+#define POS_L14    31
+#define POS_L15    30
+#define POS_R11    27
+#define POS_R12    26
+#define POS_R13    25
+#define POS_R14    24
+#define POS_R15    23
+#define POS_LT1    43
+#define POS_LT2    42
+#define POS_LT3    41
+#define POS_RT1    38
+#define POS_RT2    37
+#define POS_RT3    36
