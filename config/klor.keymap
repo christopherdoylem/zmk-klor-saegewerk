@@ -1,5 +1,6 @@
 // saegewerk -- all content lives in keymap_core.dtsi, shared by every board.
 // Its mirroring, its two knobs and its missing keys are all described in
 // layout_saegewerk.dtsi. Published as config/klor.keymap.
+#define IS_MAC
 #include "layout_saegewerk.dtsi"
 #include "keymap_core.dtsi"
